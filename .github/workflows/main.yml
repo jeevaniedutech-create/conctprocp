@@ -21,22 +21,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - uses: oven-sh/setup-bun@v2
         with:
-          node-version: 22
-          cache: npm
+          bun-version: latest
 
-      - run: npm install
+      - run: bun install
 
       - name: Build
-        run: npm run build
+        run: bun run build
         env:
           VITE_BASE: /conctprocp/
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
 
       - name: Copy index.html to 404.html (SPA fallback)
-        run: cp dist/index.html dist/404.html || true
+        run: cp dist/index.html dist/404.html
 
       - name: Ensure .nojekyll
         run: touch dist/.nojekyll
