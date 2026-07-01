@@ -23,8 +23,8 @@ export function Layout() {
       <header className="sticky top-0 z-40 backdrop-blur-xl bg-background/70 border-b border-border/60">
         <div className="container-prose flex items-center justify-between h-18 py-4">
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-display font-semibold text-lg shadow-sm ring-1 ring-brass/30">
-              ψ
+            <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center shadow-sm ring-1 ring-primary/20 overflow-hidden">
+              <img src={`${import.meta.env.BASE_URL}favicon.png`} alt="CPA Kerala" className="w-full h-full object-contain" />
             </div>
             <div className="leading-tight">
               <div className="font-display text-lg font-semibold tracking-tight">CPA Kerala</div>
@@ -93,8 +93,8 @@ export function Layout() {
         <div className="container-prose py-14 grid md:grid-cols-3 gap-10">
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-9 h-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-display font-semibold">
-                ψ
+              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden ring-1 ring-primary/20">
+                <img src={`${import.meta.env.BASE_URL}favicon.png`} alt="CPA Kerala" className="w-full h-full object-contain" />
               </div>
               <div className="font-display text-lg font-semibold">CPA Kerala</div>
             </div>
