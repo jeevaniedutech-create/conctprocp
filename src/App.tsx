@@ -4,6 +4,7 @@ import Home from "@/pages/Home";
 import About from "@/pages/About";
 import Verify from "@/pages/Verify";
 import Admin from "@/pages/Admin";
+import SmartSwitch from "@/pages/SmartSwitch";
 import NotFound from "@/pages/NotFound";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/verify" element={<Verify />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/smart-switch" element={<SmartSwitch />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
