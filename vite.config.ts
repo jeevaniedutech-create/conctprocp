@@ -6,7 +6,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 // Base path for GitHub Pages deployment to `/athprojecttb/`.
 // On other static hosts (Netlify, Cloudflare Pages, Firebase) the base is overridable
 // via the BASE env var, defaulting to `/` when not building for GitHub Pages.
-const base = process.env.VITE_BASE ?? "/conctprocp/";
+const base = process.env.VITE_BASE ?? "/athprojecttb/";
 
 export default defineConfig({
   base,
